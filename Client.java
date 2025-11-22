@@ -38,9 +38,9 @@ public class Client
                         e1[1] = Integer.parseInt(dis.readUTF());
                         e1[2] = Integer.parseInt(dis.readUTF());
 
-                        if (e[0] < e1[0]) { e[0] = e1[0]; System.out.print("\n\nEvent: 1." + e[0]); }
-                        if (e[1] < e1[1]) { e[1] = e1[1]; System.out.print("\n\nEvent: 1." + e[1]); }
-                        if (e[2] < e1[2]) { e[2] = e1[2]; System.out.print("\n\nEvent: 1." + e[2]); }
+                        if (e[0] < e1[0]) { e[0] = e1[0]; System.out.print("\n\nEvent: 1." + e[0] +"\n"); }
+                        if (e[1] < e1[1]) { e[1] = e1[1]; System.out.print("\n\nEvent: 1." + e[1] +"\n"); }
+                        if (e[2] < e1[2]) { e[2] = e1[2]; System.out.print("\n\nEvent: 1." + e[2]  +"\n"); }
                     }
 
                     else if (msg.equals("cn2")) {
@@ -48,9 +48,9 @@ public class Client
                         e2[1] = Integer.parseInt(dis.readUTF());
                         e2[2] = Integer.parseInt(dis.readUTF());
 
-                        if (e[0] < e2[0]) { e[0] = e2[0]; System.out.print("\n\nEvent: 2." + e[0]); }
-                        if (e[1] < e2[1]) { e[1] = e2[1]; System.out.print("\n\nEvent: 2." + e[1]); }
-                        if (e[2] < e2[2]) { e[2] = e2[2]; System.out.print("\n\nEvent: 2." + e[2]); }
+                        if (e[0] < e2[0]) { e[0] = e2[0]; System.out.print("\n\nEvent: 2." + e[0] +"\n"); }
+                        if (e[1] < e2[1]) { e[1] = e2[1]; System.out.print("\n\nEvent: 2." + e[1] +"\n"); }
+                        if (e[2] < e2[2]) { e[2] = e2[2]; System.out.print("\n\nEvent: 2." + e[2] +"\n"); }
                     }
 
                     else if (msg.equals("cn3")) {
@@ -58,9 +58,9 @@ public class Client
                         e3[1] = Integer.parseInt(dis.readUTF());
                         e3[2] = Integer.parseInt(dis.readUTF());
 
-                        if (e[0] < e3[0]) { e[0] = e3[0]; System.out.print("\n\nEvent: 3." + e[0]); }
-                        if (e[1] < e3[1]) { e[1] = e3[1]; System.out.print("\n\nEvent: 3." + e[1]); }
-                        if (e[2] < e3[2]) { e[2] = e3[2]; System.out.print("\n\nEvent: 3." + e[2]); }
+                        if (e[0] < e3[0]) { e[0] = e3[0]; System.out.print("\n\nEvent: 3." + e[0] +"\n"); }
+                        if (e[1] < e3[1]) { e[1] = e3[1]; System.out.print("\n\nEvent: 3." + e[1] +"\n"); }
+                        if (e[2] < e3[2]) { e[2] = e3[2]; System.out.print("\n\nEvent: 3." + e[2] +"\n"); }
                     }
 
                     else if (msg.equals("cn1 cn2")) {
@@ -71,12 +71,12 @@ public class Client
                         e2[1] = Integer.parseInt(dis.readUTF());
                         e2[2] = Integer.parseInt(dis.readUTF());
 
-                        if (e[0] < e1[0]) { e[0] = e1[0]; System.out.print("\n\nEvent: 1." + e[0]); }
-                        if (e[1] < e1[1]) { e[1] = e1[1]; System.out.print("\n\nEvent: 1." + e[1]); }
-                        if (e[2] < e1[2]) { e[2] = e1[2]; System.out.print("\n\nEvent: 1." + e[2]); }
-                        if (e[0] < e2[0]) { e[0] = e2[0]; System.out.print("\n\nEvent: 2." + e[0]); }
-                        if (e[1] < e2[1]) { e[1] = e2[1]; System.out.print("\n\nEvent: 2." + e[1]); }
-                        if (e[2] < e2[2]) { e[2] = e2[2]; System.out.print("\n\nEvent: 2." + e[2]); }
+                        if (e[0] < e1[0]) { e[0] = e1[0]; System.out.print("\n\nEvent: 1." + e[0] +"\n"); }
+                        if (e[1] < e1[1]) { e[1] = e1[1]; System.out.print("\n\nEvent: 1." + e[1] +"\n"); }
+                        if (e[2] < e1[2]) { e[2] = e1[2]; System.out.print("\n\nEvent: 1." + e[2] +"\n"); }
+                        if (e[0] < e2[0]) { e[0] = e2[0]; System.out.print("\n\nEvent: 2." + e[0] +"\n"); }
+                        if (e[1] < e2[1]) { e[1] = e2[1]; System.out.print("\n\nEvent: 2." + e[1] +"\n"); }
+                        if (e[2] < e2[2]) { e[2] = e2[2]; System.out.print("\n\nEvent: 2." + e[2] +"\n"); }
                     }
 
                     else if (msg.equals("cn1 cn3")) {
@@ -87,12 +87,12 @@ public class Client
                         e3[1] = Integer.parseInt(dis.readUTF());
                         e3[2] = Integer.parseInt(dis.readUTF());
 
-                        if (e[0] < e1[0]) { e[0] = e1[0]; System.out.print("\n\nEvent: 1." + e[0]); }
-                        if (e[1] < e1[1]) { e[1] = e1[1]; System.out.print("\n\nEvent: 1." + e[1]); }
-                        if (e[2] < e1[2]) { e[2] = e1[2]; System.out.print("\n\nEvent: 1." + e[2]); }
-                        if (e[0] < e3[0]) { e[0] = e3[0]; System.out.print("\n\nEvent: 3." + e[0]); }
-                        if (e[1] < e3[1]) { e[1] = e3[1]; System.out.print("\n\nEvent: 3." + e[1]); }
-                        if (e[2] < e3[2]) { e[2] = e3[2]; System.out.print("\n\nEvent: 3." + e[2]); }
+                        if (e[0] < e1[0]) { e[0] = e1[0]; System.out.print("\n\nEvent: 1." + e[0] +"\n"); }
+                        if (e[1] < e1[1]) { e[1] = e1[1]; System.out.print("\n\nEvent: 1." + e[1] +"\n"); }
+                        if (e[2] < e1[2]) { e[2] = e1[2]; System.out.print("\n\nEvent: 1." + e[2] +"\n"); }
+                        if (e[0] < e3[0]) { e[0] = e3[0]; System.out.print("\n\nEvent: 3." + e[0] +"\n"); }
+                        if (e[1] < e3[1]) { e[1] = e3[1]; System.out.print("\n\nEvent: 3." + e[1] +"\n"); }
+                        if (e[2] < e3[2]) { e[2] = e3[2]; System.out.print("\n\nEvent: 3." + e[2] +"\n"); }
                     }
 
                     else if (msg.equals("cn2 cn3")) {
@@ -103,12 +103,12 @@ public class Client
                         e3[1] = Integer.parseInt(dis.readUTF());
                         e3[2] = Integer.parseInt(dis.readUTF());
 
-                        if (e[0] < e2[0]) { e[0] = e2[0]; System.out.print("\n\nEvent: 2." + e[0]); }
-                        if (e[1] < e2[1]) { e[1] = e2[1]; System.out.print("\n\nEvent: 2." + e[1]); }
-                        if (e[2] < e2[2]) { e[2] = e2[2]; System.out.print("\n\nEvent: 2." + e[2]); }
-                        if (e[0] < e3[0]) { e[0] = e3[0]; System.out.print("\n\nEvent: 3." + e[0]); }
-                        if (e[1] < e3[1]) { e[1] = e3[1]; System.out.print("\n\nEvent: 3." + e[1]); }
-                        if (e[2] < e3[2]) { e[2] = e3[2]; System.out.print("\n\nEvent: 3." + e[2]); }
+                        if (e[0] < e2[0]) { e[0] = e2[0]; System.out.print("\n\nEvent: 2." + e[0] +"\n"); }
+                        if (e[1] < e2[1]) { e[1] = e2[1]; System.out.print("\n\nEvent: 2." + e[1] +"\n"); }
+                        if (e[2] < e2[2]) { e[2] = e2[2]; System.out.print("\n\nEvent: 2." + e[2] +"\n"); }
+                        if (e[0] < e3[0]) { e[0] = e3[0]; System.out.print("\n\nEvent: 3." + e[0] +"\n"); }
+                        if (e[1] < e3[1]) { e[1] = e3[1]; System.out.print("\n\nEvent: 3." + e[1] +"\n"); }
+                        if (e[2] < e3[2]) { e[2] = e3[2]; System.out.print("\n\nEvent: 3." + e[2] +"\n"); }
                     }
 
                     else if (msg.equals("cn1 cn2 cn3")) {
@@ -122,16 +122,17 @@ public class Client
                         e3[1] = Integer.parseInt(dis.readUTF());
                         e3[2] = Integer.parseInt(dis.readUTF());
 
-                        if (e[0] < e1[0]) { e[0] = e1[0]; System.out.print("\n\nEvent: 1." + e[0]); }
-                        if (e[1] < e1[1]) { e[1] = e1[1]; System.out.print("\n\nEvent: 1." + e[1]); }
-                        if (e[2] < e1[2]) { e[2] = e1[2]; System.out.print("\n\nEvent: 1." + e[2]); }
-                        if (e[0] < e2[0]) { e[0] = e2[0]; System.out.print("\n\nEvent: 2." + e[0]); }
-                        if (e[1] < e2[1]) { e[1] = e2[1]; System.out.print("\n\nEvent: 2." + e[1]); }
-                        if (e[2] < e2[2]) { e[2] = e2[2]; System.out.print("\n\nEvent: 2." + e[2]); }
-                        if (e[0] < e3[0]) { e[0] = e3[0]; System.out.print("\n\nEvent: 3." + e[0]); }
-                        if (e[1] < e3[1]) { e[1] = e3[1]; System.out.print("\n\nEvent: 3." + e[1]); }
-                        if (e[2] < e3[2]) { e[2] = e3[2]; System.out.print("\n\nEvent: 3." + e[2]); }
+                        if (e[0] < e1[0]) { e[0] = e1[0]; System.out.print("\n\nEvent: 1." + e[0] +"\n"); }
+                        if (e[1] < e1[1]) { e[1] = e1[1]; System.out.print("\n\nEvent: 1." + e[1] +"\n"); }
+                        if (e[2] < e1[2]) { e[2] = e1[2]; System.out.print("\n\nEvent: 1." + e[2] +"\n"); }
+                        if (e[0] < e2[0]) { e[0] = e2[0]; System.out.print("\n\nEvent: 2." + e[0] +"\n"); }
+                        if (e[1] < e2[1]) { e[1] = e2[1]; System.out.print("\n\nEvent: 2." + e[1] +"\n"); }
+                        if (e[2] < e2[2]) { e[2] = e2[2]; System.out.print("\n\nEvent: 2." + e[2] +"\n"); }
+                        if (e[0] < e3[0]) { e[0] = e3[0]; System.out.print("\n\nEvent: 3." + e[0] +"\n"); }
+                        if (e[1] < e3[1]) { e[1] = e3[1]; System.out.print("\n\nEvent: 3." + e[1] +"\n"); }
+                        if (e[2] < e3[2]) { e[2] = e3[2]; System.out.print("\n\nEvent: 3." + e[2] +"\n"); }
                     }
+					System.out.print("\n\nWant to perform addition?\n(Enter '1' for 'yes' or '0' for 'no'): ");
                 }
             } catch (Exception ex) {
                 System.out.println("\nDisconnected from server.");
@@ -141,9 +142,6 @@ public class Client
         receiver.start(); // start async receiver
 
 
-        // -------------------------------
-        // SENDING LOOP (unchanged)
-        // -------------------------------
         while (true)
         {
             System.out.print("\n\nWant to perform addition?\n(Enter '1' for 'yes' or '0' for 'no'): ");
