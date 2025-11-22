@@ -1,20 +1,42 @@
-import java.io.*;
 import java.net.*;
-public class Server
-{
-	public static void main(String args[]) throws Exception
-	{
-		// Create server socket
-		ServerSocket ss = new ServerSocket(1404);
+import java.util.*;
 
-		// Add clients
-		// Accept client's connection
-		Socket s1 = ss.accept();
-		Socket s2 = ss.accept();
-		Socket s3 = ss.accept();
+public class Server {
+	
 
-		// Call thread
-		ServerThread st = new ServerThread(s1,s2,s3);
-		st.start();
-	}
+    // Store client handlers
+    static ArrayList<ClientHandler> clients = new ArrayList<>();
+
+    public static void main(String[] args) throws Exception {
+
+        ServerSocket ss = new ServerSocket(1404);
+        System.out.println("Server listening...");
+
+        int id = 1;
+
+        while (true) {
+            Socket s = ss.accept();
+            System.out.println("Client " + id + " connected");
+
+            ClientHandler ch = new ClientHandler(s, id);
+            clients.add(ch);
+
+            ch.start();
+            id++;
+        }
+    }
+
+    // Broadcast message to all clients
+    public static synchronized void broadcast(String label, int a, int b, int c) {
+        try {
+            for (ClientHandler cHandler : clients) {
+                cHandler.dos.writeUTF(label);
+                cHandler.dos.writeUTF("" + a);
+                cHandler.dos.writeUTF("" + b);
+                cHandler.dos.writeUTF("" + c);
+            }
+        } catch (Exception e) {
+            System.out.println("Broadcast error");
+        }
+    }
 }
