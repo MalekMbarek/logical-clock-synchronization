@@ -5,7 +5,7 @@ public class ServerThread extends Thread
 {
 	Socket s1, s2, s3;
 
-	serverthread2(Socket InSocket1, Socket InSocket2, Socket InSocket3)
+	public ServerThread(Socket InSocket1, Socket InSocket2, Socket InSocket3)
 	{
 		s1 = InSocket1;
 		s2 = InSocket2;
